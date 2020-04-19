@@ -15,7 +15,7 @@ def find_hwnd(title: str):
     return hwnd
 
 
-def set_always_on_top(title: str):
+def set_always_on_top(*args, title=''):
     '''
     Sets the HWND_TOPMOST flag for the current Kivy Window.
     This behavior will be overwritten by setting position of the window from kivy.
