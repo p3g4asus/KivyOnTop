@@ -57,7 +57,7 @@ def register_topmost(Window, title: str):
     global set_on_top
     if set_on_top:
         Window.unbind(on_draw=set_on_top)
-    set_on_top = partial(set_always_on_top, title)
+    set_on_top = partial(set_always_on_top, title=title)
     Window.bind(on_draw=set_on_top)
 
 
